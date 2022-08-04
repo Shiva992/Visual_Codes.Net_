@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefandOut", "RefandOut.csproj", "{29A72C12-A061-483A-BC8C-1DF64BA5A681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A72C12-A061-483A-BC8C-1DF64BA5A681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A72C12-A061-483A-BC8C-1DF64BA5A681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A72C12-A061-483A-BC8C-1DF64BA5A681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A72C12-A061-483A-BC8C-1DF64BA5A681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEAC7C5D-A96B-470C-B42E-CC16830D7DC4}
+	EndGlobalSection
+EndGlobal
