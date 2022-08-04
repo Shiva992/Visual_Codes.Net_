@@ -11,8 +11,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             PartialEmployee emp = new PartialEmployee();
-            emp.FirstName = "Rishabh";
-            emp.LastName = "Dora";
+            emp.FirstName = "Shiva;
+            emp.LastName = "bharadwaj";
             emp.Salary = 100000;
             emp.Gender = "Male";
             emp.DisplayFullName();
