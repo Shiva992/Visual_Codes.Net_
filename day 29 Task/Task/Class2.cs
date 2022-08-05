@@ -25,6 +25,7 @@
         AccountName = accountName;
         AccountBalance = accountBalance;
         TransactionAmount = transactionAmount;
+
     }
 
     protected Exception(
