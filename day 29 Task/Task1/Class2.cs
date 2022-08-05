@@ -17,6 +17,7 @@ public class Exception : System.Exception
     {
         AccountName = accountName;
         AccountBalance = accountBalance;
+
         TransactionAmount = transactionAmount;
     }
 
