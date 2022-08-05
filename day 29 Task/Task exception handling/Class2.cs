@@ -8,10 +8,10 @@ namespace MyApp
         static void Main(string[] args)
         {
            
-            var account = new Account("Shiva", 150);
+            var account = new Account("Shiva", 500);
             try
-            {
-                account.Debit(200);
+            { 
+                account.Debit(600);
             }
             catch (Exception ex)
             {

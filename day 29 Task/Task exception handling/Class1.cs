@@ -18,7 +18,7 @@ namespace Task_exception_handling
 
         public void Debit(int amount)
         {
-            if (Balance < amount) throw new Exception(Name, Balance, amount);
+            if (Balance < 600) throw new Exception(Name, Balance, amount);
             Balance = Balance - amount;
         }
 
