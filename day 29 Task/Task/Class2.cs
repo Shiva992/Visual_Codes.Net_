@@ -19,6 +19,7 @@
         TransactionAmount = transactionAmount;
     }
 
+
     public Exception(string accountName, int accountBalance, int transactionAmount, System.Exception innerException)
     : base(DefaultMessage, innerException)
     {
