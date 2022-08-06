@@ -1,0 +1,86 @@
+Create table EmployeeDetails(
+	EmpId int primary key,
+	FullName varchar(20),
+	ManagerId int,
+	DateOfJoining Date,
+	City varchar(20)
+);
+
+Insert into EmployeeDetails values(121,'Lakshmi Kumar',321,'2001/01/31', 'Hyderabad')
+Insert into EmployeeDetails values(321,'Damodaran',986,'2002/01/30', 'Chennai')
+Insert into EmployeeDetails values(421,'Priyadarshini',876,'2003/11/27', 'Bangalore')
+Insert into EmployeeDetails values(521,'Mahesh',768,'2004/09/08', 'Mumbai')
+Insert into EmployeeDetails values(621,'Mrinalini',456,'2005/10/09', 'Thiruvanthapuram')
+Insert into EmployeeDetails values(721,'Yuvraj',654,'2006/08/06', 'Bhopal')
+Insert into EmployeeDetails values(821,'Shruthi',546,'2007/05/05', 'Chandigarh')
+Insert into EmployeeDetails values(921,'Nandini',256,'2008/06/09', 'Shimla')
+Insert into EmployeeDetails values(221,'Santhya',345,'2009/11/07', 'Shillong')
+Insert into EmployeeDetails values(122,'Priyavarshini',324,'2010/12/08', 'Amaravathi')
+
+
+Select * from EmployeeDetails;
+
+Create table EmployeeSalary(
+	EmpId int,
+	Project Varchar(4),
+	Salary int,
+	Variable int
+
+);
+
+Insert into EmployeeSalary values(121,'P1',15000,500)
+Insert into EmployeeSalary values(321,'P2',10000,1000)
+Insert into EmployeeSalary values(421,'P1',12000,0)
+Insert into EmployeeSalary values(521,'P2',9000,600)
+Insert into EmployeeSalary values(621,'Null',11000,0)
+Insert into EmployeeSalary values(721,'P1',9000,850)
+Insert into EmployeeSalary values(821,'P2',14000,478)
+Insert into EmployeeSalary values(921,'P1',13000,0)
+Insert into EmployeeSalary values(221,'P2',9000,586)
+Insert into EmployeeSalary values(122,'Null',7000,750)
+
+Select * from EmployeeSalary;
+
+--1
+Select max(salary) from EmployeeSalary;
+
+--2
+Select Project from EmployeeSalary;
+
+--3
+select EmpId from EmployeeSalary
+where Salary between 9000 and 15000;
+
+--4
+select Count(*)
+from EmployeeSalary
+where Project='P1' ;
+
+--5
+select EmpId, max(Salary) as MaxSalary, min(Salary) as MinSalary, avg(Salary) as AvgSalary from EmployeeSalary group by EmpId;
+
+--6
+Select EmpId, City, ManagerId
+from EmployeeDetails
+where City='Hyderabad' OR ManagerId='321';
+
+--7
+Select EmpId, ManagerId from EmployeeDetails;
+
+--8
+Select EmpId from EmployeeSalary where Project = 'Null';
+
+--9
+select * from EmployeeDetails E
+where exists
+(select * from EmployeeSalary S
+where E.EmpId = S.EmpId);
+
+
+--10
+SELECT E.FullName
+FROM EmployeeDetails E
+Join EmployeeDetails M
+ON E.EmpId = M.ManagerId;
+
+
