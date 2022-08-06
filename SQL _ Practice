@@ -1,0 +1,63 @@
+Create table tblDepartment(
+Id int primary key,
+DepartmentName nvarchar(50),
+Location varchar(50),
+DepartmentHead varchar(50)
+)
+Insert into tblDepartment values(1,'IT','London','ram')
+Insert into tblDepartment values(2,'Finance','US','Tim')
+Insert into tblDepartment values(3,'HR','NewYork','Jack')
+Insert into tblDepartment values(4,'other','Sydney','Kriti')
+
+create table tblEmployee(
+Id int primary key,
+Name varchar(50),
+Gender varchar(50),
+DepartmentId int foreign key references tblDepartment(Id),
+salary int
+)
+Insert into tblEmployee values(1,'Terry','Male',1,4000)
+Insert into tblEmployee values(2,'Tim','Female',3,5000)
+Insert into tblEmployee values(3,'jhonny','Male',1,7000)
+Insert into tblEmployee values(4,'simmy','Female',2,8000)
+Insert into tblEmployee values(5,'Jhon','Male',1,35000)
+
+select *from tblDepartment
+select *from tblEmployee
+
+select Name,Gender,salary,DepartmentName from tblEmployee
+cross join tblDepartment
+
+select Name,Gender,salary,DepartmentName from tblEmployee
+Inner join tblDepartment 
+on tblEmployee.Id=tblDepartment.Id
+
+select Name,Gender,salary,DepartmentName from tblEmployee
+left join tblDepartment
+on tblEmployee.Id=tblDepartment.Id
+
+select Name,Gender,salary,DepartmentName from tblEmployee
+right join tblDepartment
+on tblEmployee.Id=tblDepartment.Id
+
+select Name,Gender,salary,DepartmentName from tblEmployee
+full join tblDepartment
+on tblEmployee.Id=tblDepartment.Id
+
+--only non matching from left table
+select Name,Gender,salary,DepartmentName from tblEmployee E
+left join tblDepartment D
+on E.Id=D.Id
+where D.Id is null
+
+--only non matching from right table
+select Name,Gender,salary,DepartmentName from tblEmployee E
+right join tblDepartment D
+on E.DepartmentId=D.Id
+where E.DepartmentId is null
+
+select Name,Gender,salary,DepartmentName 
+from tblEmployee E
+left join tblDepartment D
+On E.DepartmentId=D.Id
+where E.DepartmentId=null
