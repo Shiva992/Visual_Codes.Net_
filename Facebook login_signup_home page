@@ -1,0 +1,594 @@
+---------------------------------------Index.html file---------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>
+Facebook login or signup    
+</title>    
+    <link rel = "stylesheet" type="text/css" href="style.css">
+    
+  
+</head>
+    <body>
+    <nav class ="navbar">
+        <img class="logo" src="fb.png">
+        <form class = "login_form">
+        
+        <div class ="email">
+            <div class = "font">Email or Phone </div>
+            <input type="text" name="">
+                   
+         </div>
+        <div class ="password">
+            <div class = "font">Password</div>
+            <input type="password" name="">
+            
+              </div>
+            <button class ="login_btn">Login</button>
+   
+            
+                 </form>
+        
+    </nav>
+        <section>
+        <div class ="logo_body">
+            <img class ="logobody" src="fbbdy.png">
+            <p class = "like_font font1">Thanks for stopping by!</p>
+            <p class ="like font">We hope to see you again soon.</p>
+            
+            </div>
+            <div class ="signup_body">
+            <p class = "acc_crt">Create an account</p>
+                <p class= "free_hint">It's free and always will be.</p> 
+                  <form class = "signup_form">
+
+                    <div>
+                      <input class = "firstname" type= "text" name="" placeholder="First name">
+                      <input class = "lastname" type= "text" name=""placeholder="Last name">
+                         <input class = "email" type= "text" name=""placeholder="Enter your Mobile number or Email">
+                      <input class = "Password" type= "Password" name=""placeholder="Password">
+                      <input class = "Password2" type= "Password" name=""placeholder="Confirm Password">
+
+                      </div>
+                <p class = "birthday">Birthday</p>
+                      <div class="birth_date">
+                      
+                      <select class = "month">
+                          <option>Month</option><option>January</option><option>february</option><option>March</option><option>april</option><option>May</option><option>
+                          june</option><option>july</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+                          </select>
+                          <select class ="day">
+                              
+                          <option>Day</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>
+                          6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+                               <option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>
+                          19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                               <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                         
+                          </select>
+                          <select class = "Year">
+                          
+                          <option>Year</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>
+                          2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option>
+                          </select>
+                          
+                          <p class="="birth_hint><a href="#"> Why do i need to provide my DOB? </a></p>
+                      </div>
+                      <input type="radio" name="gender" value="male">
+                       <input type="radio" name="gender" value="female">
+                      <p class="font">male</p>
+                      <p class="font font2">Female</p>
+                      <p class = "agreement">By clicking SignUp , You agree to our <a href="#" >Terms , Data policy and Cookies Policy. </a>You may Receive SMS notification from us and can opt out anytime</p>
+                      <button class = "signup" ><a href="home2.html">Sign Up</a>
+                       
+                      
+                      </button>
+                      
+
+                </form>
+            </div>
+        </section>
+    </body>
+</html> 
+
+
+
+
+------------------------------------------------------------------CSS file----------------------------------------------------------
+
+   *{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(#48649F, #3B5998, #3B5998);
+    border-bottom: 1px solid #253a69;
+}
+.logo{
+    position: absolute;
+    height: 63px;
+    width: 190px;
+    left: 13%;
+    padding-top: 15px;
+}
+.login_form{
+    display: flex;
+    position: absolute;
+    font-family: verdana;
+    left: 58%;
+    top: 15px;
+}
+.login_form .email,
+.login_form .password{
+    padding-left: 10px;
+}
+.login_form .email .font,
+.login_form .password .font{
+    font-size: 13px;
+    padding-bottom: 4px;
+    color: white;
+}
+.login_form .email input,
+.login_form .password input{
+    height: 23px;
+    width: 150px;
+    padding-left: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+.login_btn
+{
+    height: 24px;
+    width: 50px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    color:white;
+    background: #2d5bba;
+    border: 1px solid #224285;
+}
+
+.login_btn:hover{
+    background: #3B5998;
+}
+section{
+    height: 614px;
+    width: 100%;
+    top: 800px;
+    background: linear-gradient(#FDFDFE, #EFF1F6, #E3E6F0, #D6DBEA);
+    font-family: verdana;
+}
+
+
+.logo_body{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+.logo_body .like_font{
+    font-family: arial;
+    font-size: 25px;
+    margin-left: -30px;
+}
+.logo_body .font1{
+    color: #083987;
+    margin-left: 20px;   
+    margin-bottom: 5px;
+}
+.signup_body{
+    font-family: arial;
+    position: absolute;
+    left: 55%;  
+}
+.signup_body .acc_crt{
+    font-size: 40px;
+    margin: 25px 0;
+}
+.signup_body .free_hint{
+    margin: -10px 5px;
+    font-size: 18px;
+    
+}
+.signup_body .signup_form input{
+    margin-top: 50px;
+    height: 38px;
+    width: 190px;
+    padding-left: 50px;
+    font-size: 18px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.signup_body .signup_form .lastname{
+    margin-left: 2px;
+   
+}
+.signup_body .signup_form .email,
+.signup_body .signup_form .password,
+.signup_body .signup_form .password2{
+  
+    margin-top: 40px;
+    width: 435px;
+}
+.signup_body .signup_form .birthday{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+.signup_body .signup_form .birth_date{
+    margin-top: 10px;
+    
+}
+.signup_body .signup_form .month,
+.signup_body .signup_form .day,
+.signup_body .signup_form .Year{
+    height: 29px;
+}
+.signup_body .signup_form .month,
+.signup_body .signup_form .day,
+.signup_body .signup_form .year{
+    margin-left: 4px;
+}
+.signup_body .signup_form .birth_hint{
+    font-size: 11px;
+    padding-left: 170px;
+    margin-top: -28px;
+    width: 150px;
+}
+.signup_body .signup_form a{
+    text-decoration: none;
+}
+.signup_body .signup_form a:hover{
+    text-decoration: underline;
+}
+.signup_body .signup_form input[type="radio"]{
+    height: 10px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+.signup_body .signup_form input[value="female" ]{
+    margin-left: -100px;
+}
+.signup_body .signup_form .font{
+    margin-left: 57px;
+    margin-top: -17px;
+}
+.signup_body .signup_form .font2{
+    margin-left: 150px;
+}
+.signup_body .signup_form .agreement{
+    margin-top: 5px;
+    font-size: 12px;
+    width: 450px;
+    color: grey;
+}
+.signup_body .signup_form .signup{
+    margin-top: 30px;
+    height: 38px;
+    width: 170px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    border: 1px solid #006117;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(#6fad5a, #66a150, #60974C);
+}
+.signup_body .signup_form .signup:hover{
+    background: linear-gradient(#74b85e, #598B45);
+}
+.
+
+
+
+--------------------------------home2.html----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Webdevelopment</title>
+    
+</head>
+    <link rel = "stylesheet" type="text/css" href="home3.css">
+    <body>
+        <header>
+        <div class="main">
+            
+            <div class="logo">
+            <img src="Facebook.png">
+            </div>
+            </div>
+            <ul>
+     
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html"> About us</a></li>
+                <li><a href="Contactme.html">Contact us</a></li>
+                <li><a href="help.html">Help center</a></li>
+                   
+<h1>
+                MY FAVOURITE PLACE HIMACHAL PRADHESH!!</h1>
+                <h2> Author name : Shiva bharadwaj</h2>
+                  <p class = "shiva">Himachal Pradesh Tourism
+Himachal Pradesh is hill state, located in northern part of India and situated in the Western Himalayas. It’s bordered by union territories of Jammu Kashmir and Ladakh in the north side and other states of India like Punjab in the west, Uttarakhand in the south east, Haryana in the south west and the international border of Tibet in the east.
+
+Himachal Pradesh is a mountainous state and most of the region lies on the foothills of the Dhauladhar Mountain Range. Reo Purgyil is the highest mountain peak in the Himachal Pradesh, located at height of 6,816 meters above from the sea level. Himachal Pradesh is spread across valleys with many perennial rivers flowing through them.
+<h3> Read from here now..........................................................................................................</h3>
+About Himachal
+Himachal Pradesh Tourism
+Himachal state is also referred to as “Dev Bhoomi” (literally meaning Abode of Gods) due to its mention as such in ancient Hindu texts and occurrence of a large number of historical temples in the Himachal Pradesh.
+
+Tourism in Himachal Pradesh is a major contributor to the state’s economy and its growth. Beautiful Himalayas attracts tourists from all over the country and the world. Famous hill stations like Shimla, Manali, Dharamshala, Dalhousie, Chamba, Khajjiar, Kullu and Kasauli are the most popular tourist destinations for domestic and foreign tourists. 
+<h3> Read from here now..........................................................................................................</h3>
+Himachal state also has many important Himachal Hindu pilgrimage sites with prominent and ancient temples as Naina Devi Temple, Mata Bajreshwari Temple, Jwala Ji Temple, Chintpurni Ji,  Chamunda Devi Temple, Baijnath Temple, Bhimakali Temple, Bijli Mahadev and Jakhoo Temple.
+
+Manimahesh Lake situated in the Bharmour region of Chamba district of Himachal Pradesh is the venue of an annual Hindu pilgrimage trek held in the month of August which attracts lacs of devotees. 
+<h3> Read from here now..........................................................................................................</h3>
+Himachal Tourism
+Mountain Trekking In Himachal
+Himachal is also said to be the fruit bowl of the country, with orchards being widespread. Meadows and pastures are also seen clinging to steep slopes.
+<h3> Read from here now..........................................................................................................</h3>
+Himachal Pradesh hosted the first Paragliding World Cup in country from 24 to 31 October in 2015. The venue for the paragliding world cup was Bir Billing in the Kangra district, which is 70 km from the tourist town Macleod Ganj, located in the heart of Himachal. Bir Billing is the center for aero sports in Himachal and considered as best for paragliding. Buddhist monasteries, trekking to tribal villages and mountain biking are other local activities.
+                Himachal Pradesh (/hɪˌmɑːtʃəl prəˈdɛʃ/; Hindi: [ɦɪˈmɑːtʃəl pɾəˈdeːʃ] (listen); lit. "Province of the Snow-laden Mountains"[16]) is a state in the northern part of India. Situated in the Western Himalayas, it is one of the thirteen mountain states and is characterized by an extreme landscape featuring several peaks and extensive river systems. Himachal Pradesh is the northernmost state of India and shares borders with the union territories of Jammu and Kashmir and Ladakh to the north, and the states of Punjab to the west, Haryana to the southwest, Uttarakhand to the southeast and a very narrow border with Uttar Pradesh to the south. The state also shares an international border to the east with the Tibet Autonomous Region in China. Himachal Pradesh is also known as Dev Bhoomi, meaning 'Land of Gods'[17] and Veer Bhoomi which means 'Land of the Brave'.[18]
+
+The predominantly mountainous region comprising the present-day Himachal Pradesh has been inhabited since pre-historic times having witnessed multiple waves of human migrations from other areas.[19] Through its history, the region was mostly ruled by local kingdoms some of which accepted the suzerainty of larger empires. Prior to India's independence from the British, Himachal comprised the hilly regions of Punjab Province of British India. After independence, many of the hilly territories were organized as the Chief Commissioner's province of Himachal Pradesh which later became a union territory. In 1966, hilly areas of neighboring Punjab state were merged into Himachal and it was ultimately granted full statehood in 1971.
+
+Himachal Pradesh is spread across valleys with many perennial rivers flowing through them. Around 90% of the state's population lives in rural areas. Agriculture, horticulture, hydropower and tourism are important constituents of the state's economy. The hilly state is almost universally electrified with 99.5% of the households having electricity as of 2016. The state was declared India's second open-defecation-free state in 2016.[20] According to a survey of CMS – India Corruption Study 2017, Himachal Pradesh is India's least corrupt state.[21][22]
+
+
+Contents
+1	History
+1.1	History of the region
+1.2	History of the state
+2	Geography and climate
+3	Flora and fauna
+4	Government
+5	Administrative divisions
+6	Economy
+6.1	Agriculture
+6.2	Industry
+6.3	Energy
+7	Tourism
+8	Transport
+8.1	Air
+8.2	Railways
+8.2.1	Broad-gauge lines
+8.2.2	Narrow-gauge lines
+8.3	Roads
+8.3.1	Schemes
+9	Demographics
+9.1	Population
+9.2	Languages
+9.3	Religion
+10	Culture
+10.1	Notable people
+11	Education
+12	State profile
+13	See also
+14	References
+15	Further reading
+16	External links
+History
+History of the region
+Main article: History of Himachal Pradesh
+
+Bathu ki Ladi Temples, near Maharana Pratap Sagar in Kangra are believed to be constructed by Pandavas
+Tribes such as the Koli, Hali, Dagi, Dhaugri, Dasa, Khasa, Kanaura, and Kirata inhabited the region from the prehistoric era.[23] The foothills of the modern state of Himachal Pradesh were inhabited by people from the Indus valley civilisation which flourished between 2250 and 1750 BCE.[24] The Kols and Mundas are believed to be the original inhabitants to the hills of present-day Himachal Pradesh followed by the Bhotas and Kiratas.[24]
+
+During the Vedic period, several small republics known as Janapada existed which were later conquered by the Gupta Empire. After a brief period of supremacy by King Harshavardhana, the region was divided into several local powers headed by chieftains, including some Rajputs principalities. These kingdoms enjoyed a large degree of independence and were invaded by Delhi Sultanate several times.[24] Mahmud Ghaznavi conquered Kangra at the beginning of the 11th century. Timur and Sikander Lodi also marched through the lower hills of the state and captured several forts and fought many battles.[24] Several hill states acknowledged Mughal suzerainty and paid regular tribute to the Mughals.[25]
+
+The Kingdom of Gorkha conquered many kingdoms and came to power in Nepal in 1768.[24] They consolidated their military power and began to expand their territory.[24] Gradually, the Kingdom of Nepal annexed Sirmour and Shimla. Under the leadership of Amar Singh Thapa, the Nepali army laid siege to Kangra. They managed to defeat Sansar Chand Katoch, the ruler of Kangra, in 1806 with the help of many provincial chiefs. However, the Nepali army could not capture Kangra fort which came under Maharaja Ranjeet Singh in 1809. After the defeat, they expanded towards the south of the state. However, Raja Ram Singh, Raja of Siba State, captured the fort of Siba from the remnants of Lahore Darbar in Samvat 1846,[24] during the First Anglo-Sikh War.
+
+They came into direct conflict with the British along the tarai belt after which the British expelled them from the provinces of the Satluj.[24] The British gradually emerged as the paramount power in the region.[24] In the revolt of 1857, or first Indian war of independence, arising from several grievances against the British,[24] the people of the hill states were not as politically active as were those in other parts of the country.[24] They and their rulers, except Bushahr, remained more or less inactive.[24] Some, including the rulers of Chamba, Bilaspur, Bhagal and Dhami, rendered help to the British government during the revolt.
+
+y states.[46]
+
+Himachal Pradesh is governed through a parliamentary system of representative democracy, a feature the state shares with other Indian states. Universal suffrage is granted to residents. The legislature consists of elected members and special office bearers such as the Speaker and the Deputy Speaker who are elected by the members. Assembly meetings are presided over by the Speaker or the Deputy Speaker in the Speaker's absence. The judiciary is composed of the Himachal Pradesh High Court and a system of lower courts.
+
+
+Town Hall in Shimla
+Executive authority is vested in the Council of Ministers headed by the Chief Minister, although the titular head of government is the Governor. The governor is the head of state appointed by the President of India. The leader of the party or coalition with a majority in the Legislative Assembly is appointed as the Chief Minister by the governor, and the Council of Ministers are appointed by the governor on the advice of the Chief Minister. The Council of Ministers reports to the Legislative Assembly. The Assembly is unicameral with 68 Members of the Legislative Assembly (MLA).[47] Terms of office run for five years, unless the Assembly is dissolved prior to the completion of the term. Auxiliary authorities known as panchayats, for which local body elections are regularly held, govern local affairs.
+
+In the assembly elections held in November 2017, the Bharatiya Janata Party secured an absolute majority, winning 44 of the 68 seats while the Congress won only 21 of the 68 seats. Jai Ram Thakur[48] was sworn in as Himachal Pradesh's Chief Minister for the first time[49] in Shimla on 27 December 2017.
+
+Administrative divisions</p>
+              
+
+            </ul>
+        </header>
+    </body>
+</html>
+
+   
+   
+   
+   
+   -----------------------------------------------------------------home3.css---------------------------------------------------------
+   
+   
+   *{
+    margin: 10;
+    padding: 0;
+    font-family:cursive;
+   
+}
+header{
+    
+    height: 100vh;
+    background-position:center
+    
+}
+body{
+    
+    background: url(bg-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.shiva{
+    
+    color: white;
+}
+
+ul{
+    
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    
+    display: inline-block
+}
+
+ul li a{
+    
+    text-decoration: none;
+    color:;
+    padding: 5px 50px;
+    border: 4px solid ;
+}
+ul li a: hover{
+    
+    background-color:gold;
+    color: darkred;
+}
+.logo img{
+    max-width:6%;
+    max-height: %;
+    
+}
+.main
+{
+    !--max-width: 17800px;
+    margin: 4px;
+}
+    
+    
+}
+
+
+
+
+
+-------------------------------------------------------aboutus.html------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Webdevelopment</title>
+    
+</head>
+    <link rel = "stylesheet" type="text/css" href="home3.css">
+    <body>
+        <header>
+        <div class="main">
+            
+            <div class="logo">
+            <img src="bg-2.jpg">
+            </div>
+            </div>
+           
+     
+          <h1> Thanks for visiting in this page </h1>
+                <h2> My name is shiva and currently i am working in hitachi and if you want to know anything just send a mail </h2>
+                <a href="#">Shivabharadwaj599@gmail.com</a>
+                <h3>Thank you !</h3>
+                <h4>----------------------------------------------<li><a href="index.html">Return on main page</a></li>---------------------------------------------------------------------------------------------------</h4>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+      ---------------------------------------------cotactme.html------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Webdevelopment</title>
+    
+</head>
+    <link rel = "stylesheet" type="text/css" href="home3.css">
+    <body>
+        <header>
+        <div class="main">
+            
+            <div class="logo">
+            <img src="istockphoto-1307465168-170667a%20-%20Copy.jpg">
+            </div>
+            </div>
+            <ul>
+     
+          <h1> Thanks for visiting in this page </h1>
+                <h2> My name is shiva and currently i am working in hitachi and if you want to know anything can ping me here</h2>
+                <a href="#">9634537836</a>
+                <h3>Thank you !</h3>
+                <h4>--------------------------------------------------<li><a href="index.html">Return on main page</a></li>-----------------------------------------------------------------------------------------------</h4>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                ---------------------------------------------help.html-----------------------------------------------------------------------------------------------
+                <!DOCTYPE html>
+<html>
+<head>
+    <title> Webdevelopment</title>
+    
+</head>
+    <link rel = "stylesheet" type="text/css" href="home3.css">
+    <body>
+        <header>
+        <div class="main">
+            
+            <div class="logo">
+            <img src=
+            </div>
+            </div>
+            <ul>
+     
+          <h1> Thanks for visiting in this page </h1>
+                <h2> My name is shiva and currently i am working in hitachi , we will definitely help you just send a mail </h2>
+                <a href="#">Shivabharadwaj599@gmail.com</a>
+                <h3>Thank you !</h3>
+                <h4>--------------------------------------------------------------------<li><a href="index.html">Return on main page</a></li>-----------------------------------------------------------------------------</h4>
+
+
+
