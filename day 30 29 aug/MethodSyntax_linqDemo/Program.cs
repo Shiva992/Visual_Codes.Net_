@@ -19,11 +19,11 @@ namespace Querysyntax_linqDemo
                               where obj > 2
                               select obj;
 
-          //  var MethodSyntax = integerList.Where(obj => obj > 6).ToList();
+            var MethodSyntax = integerList.Where(obj => obj > 6).ToList();
             //Executive
 
 
-            foreach (var item in QuerySyntax)
+            foreach (var item in MethodSyntax)
             {
                 Console.Write(item + " ");
             }
