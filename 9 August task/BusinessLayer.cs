@@ -23,6 +23,7 @@ namespace _9_August_task
                 patientDetails.Id = Guid.NewGuid();//make new unique id
 
                 Console.WriteLine("Enter the patient's name");
+
                 patientDetails.Name = Console.ReadLine();
 
                 Console.WriteLine("Enter the patient's age");
