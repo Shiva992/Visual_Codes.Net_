@@ -8,10 +8,11 @@ namespace _9_August_task
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Shiva");
-
+            BusinessLayer busLayer = new BusinessLayer();
+            busLayer.HandlePatientRecords();
         }
+
     }
 }
