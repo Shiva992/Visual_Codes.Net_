@@ -23,6 +23,7 @@ namespace Querysyntax_linqDemo
             //Executive
 
 
+
             foreach (var item in MethodSyntax)
             {
                 Console.Write(item + " ");
