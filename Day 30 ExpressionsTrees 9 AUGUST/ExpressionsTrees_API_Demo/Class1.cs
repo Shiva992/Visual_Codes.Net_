@@ -14,6 +14,7 @@ namespace ExpressionsTrees_Linqlambda
 
             Expression<Func<int, bool>> lambda = num =>num < 6;
             bool result = lambda.Compile()(8);
+
             Console.WriteLine(result);
         }
     }
