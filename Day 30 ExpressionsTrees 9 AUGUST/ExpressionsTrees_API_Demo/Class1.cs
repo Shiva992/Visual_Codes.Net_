@@ -10,6 +10,7 @@ namespace ExpressionsTrees_Linqlambda
     class Class1
     {
         static void Main(string[]args)
+
         {
 
             Expression<Func<int, bool>> lambda = num =>num < 6;
