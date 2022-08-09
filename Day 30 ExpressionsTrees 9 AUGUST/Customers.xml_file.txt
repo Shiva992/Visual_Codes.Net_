@@ -1,0 +1,12 @@
+<Customers>
+<Customer CustId = "1" Name="Aditya Verma"/>
+<Customer CustId = "2" Name="Anmol"/>
+<Customer CustId = "3" Name="Shiva bharadwaj"/>
+<Customer CustId = "4" Name="Samiksha"/>
+<Customer CustId = "5" Name="Vishal rathore"/>
+<Customer CustId = "6" Name="Ashish gajanan tade"/>
+<Customer CustId = "7" Name="Chirag bedi"/>
+<Customer CustId = "8" Name="Divya sharma"/>
+<Customer CustId = "9" Name="Ayusha tripathi"/>
+<Customer CustId = "10" Name="Ashwath"/>
+</Customers>
