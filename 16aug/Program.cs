@@ -17,6 +17,7 @@ namespace ProductManagement
             do
             {
                 switch (productManagementIO.Menu())
+
                 {
                     case 1:
                         {
