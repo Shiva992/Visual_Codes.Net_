@@ -28,7 +28,7 @@ namespace ProductManagement
 
             DisplayAll();
 
-            Console.WriteLine("=========================================");
+            Console.WriteLine("==========================================");
 
         }
         public void DisplayAll()
