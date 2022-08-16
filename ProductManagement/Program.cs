@@ -14,6 +14,7 @@ namespace ProductManagement
             IProductManagementIO productManagementIO = new ProductManagementIO();
             ICategoryManagementIO categoryManagementIO = new CategoryManagementIO();
             Boolean toExit = true;
+
             do
             {
                 switch (productManagementIO.Menu())
