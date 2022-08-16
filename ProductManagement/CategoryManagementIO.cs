@@ -11,6 +11,7 @@ namespace ProductManagement
         {
             Console.WriteLine("Enter CategoryID: ");
 
+
             int categoryId = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter CategoryName :");
