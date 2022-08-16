@@ -43,6 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogicLayer.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="CategoryManagementIO.cs" />
+    <Compile Include="DBLayer.cs" />
+    <Compile Include="Interfaces\IBusinessLogicLayer.cs" />
+    <Compile Include="Interfaces\ICategoryManagementIO.cs" />
+    <Compile Include="Interfaces\IDBLayer.cs" />
+    <Compile Include="Interfaces\IProductManagementIO.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductManagementIO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
