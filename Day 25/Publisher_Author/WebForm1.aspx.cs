@@ -29,6 +29,7 @@ namespace Publisher_Author
                 cmd.ExecuteNonQuery();
                 Response.Redirect("home.aspx");
                 con.Close();
+
             }
             catch (Exception ex)
             {
