@@ -32,8 +32,6 @@ namespace Database_Connectivity
             con.Close();
 
 
-
-
             if (result >= 1)
             {
                 Response.Write("Data saved successfully");
