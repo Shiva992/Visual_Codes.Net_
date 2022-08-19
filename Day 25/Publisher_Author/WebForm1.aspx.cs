@@ -24,8 +24,8 @@ namespace Publisher_Author
                 con.Open();
                 string insert = "insert into USERINFORMATION (username , roll number) values(@username, @roll number)";
                 SqlCommand cmd = new SqlCommand(insert, con);
-                cmd.Parameters.AddWithValue("@userbname",TextBox3.Text);
-                cmd.Parameters.AddWithValue("@userbname", TextBox4.Text);
+                cmd.Parameters.AddWithValue("@username",TextBox3.Text);
+                cmd.Parameters.AddWithValue("@username", TextBox4.Text);
                 cmd.ExecuteNonQuery();
                 Response.Redirect("home.aspx");
                 con.Close();
