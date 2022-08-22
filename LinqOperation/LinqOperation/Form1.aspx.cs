@@ -24,6 +24,7 @@ namespace LinqOperation
                                Text = p.Text
                            };
 
+
             foreach (var item in distinct)
             {
                 Response.Write(item.Text + "<br/>");
