@@ -31,7 +31,7 @@
 
     <br />
     <asp:Button ID="Button2" runat="server" Text="Get Selected Items"
-        onclick="Button2_Click" />
+        onclick="Button1_Click" />
 </div>
     </form>
 </body>

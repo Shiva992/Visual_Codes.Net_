@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>
+        index
+    </title>
+</head>
+<body>
+    @TempData["Message"]
+    @{
+    
+    TempData.Keep("Message");
+    
+    }
+    @using(Html.BeginForm("Submit","Home",FormMethod.Post))
+            {
+                <input type="submit" value="submit"/>
+            }
+</body>
+</html>

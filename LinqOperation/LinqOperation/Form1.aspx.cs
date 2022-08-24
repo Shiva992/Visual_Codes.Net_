@@ -13,7 +13,7 @@ namespace LinqOperation
         {
 
         }
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button_Click(object sender, EventArgs e)
         {
             var distinct = from p in ListBox1.Items.OfType<ListItem>()
                         .Concat(ListBox2.Items.OfType<ListItem>())
@@ -31,7 +31,7 @@ namespace LinqOperation
             }
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             var list1 = from p in ListBox1.Items.OfType<ListItem>()
                         .Where(o => o.Selected)
