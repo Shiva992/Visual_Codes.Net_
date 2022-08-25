@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CrudDb" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DEL1-LHP-N82172;Initial Catalog=CrudDb;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CrudDbConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.crudemp" Method="crudemp">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Empname" Parameter="empname" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Salary" Parameter="salary" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CrudOption" Parameter="crudOption" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="crudempResult">
+      <Column Name="Empid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Empname" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
