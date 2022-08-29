@@ -12,7 +12,8 @@ namespace ShivaStudents.Models
         [Required(ErrorMessage = "Please Enter Employee Name...!")]       
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please Enter Email Id...!")]        
+        [Required(ErrorMessage = "Please enter Email ID")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Please Enter Salary...!")]
