@@ -28,7 +28,7 @@ namespace StudentDetailsFilesSegregated
             Console.WriteLine("Enter age");
             byte age = Convert.ToByte(Console.ReadLine());
 
-            Console.Write("Enter standard");
+            Console.WriteLine("Enter standard");
             byte standard = Convert.ToByte(Console.ReadLine());
 
             Console.Write("Enter Address: ");
@@ -42,12 +42,7 @@ namespace StudentDetailsFilesSegregated
             Console.WriteLine("=========================================");
 
         }
-        public void DisplayAll()
-        {
-            Console.WriteLine();
-            studentService.DisplayAll();
-            Console.WriteLine();
-        }
+        
 
         private void Display(Student student)
         {
@@ -82,8 +77,9 @@ namespace StudentDetailsFilesSegregated
 
         public void UpdateStudent()
         {
-            Console.WriteLine("1 update");
+            Console.WriteLine("1 update age");
             Console.WriteLine("2, update address");
+            Console.WriteLine("3, update name");
             Console.WriteLine("Enter option: ");
             switch (Convert.ToByte(Console.ReadLine()))
             {
@@ -105,12 +101,27 @@ namespace StudentDetailsFilesSegregated
                         Display(studentService.UpdateStudentCity(id, city));
                         break;
                     }
+                case 3:
+                    {
+                        Console.WriteLine("Enter id:");
+                        string id = Console.ReadLine();
+                        Console.Write("Enter new name");
+                        string name = Console.ReadLine();
+                        Display(studentService.UpdateStudentName(id, name));
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Enter valid option");
                         break;
                     }
             }
+        }
+        public void DisplayAll()
+        {
+            Console.WriteLine();
+            studentService.DisplayAll();
+            Console.WriteLine();
         }
     }
 }

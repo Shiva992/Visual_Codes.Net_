@@ -54,6 +54,26 @@ namespace StudentDetailsFilesSegregated
                 return null;
             }
         }
+        public Student UpdateStudentName(string id, string name)
+        {
+            if (list1.Count != 0)
+            {
+                foreach (Student s in list1)
+                {
+                    if (s.ID == id)
+                    {
+                        s.Name = name;
+                        return s;
+                    }
+                }
+                return null;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public Student UpdateStudentCity(string id, string city)
         {
             if (list1.Count != 0)
