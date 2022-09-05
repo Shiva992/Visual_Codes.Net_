@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ShivaEmployee.Models;
 
@@ -6,6 +7,7 @@ namespace ShivaEmployee.Controllers
 {
     public class EmployeeController: Controller
     {
+        [Authorize]
         public async Task<ViewResult> List()
         {
             IEnumerable<Employee> employees = new List<Employee>();

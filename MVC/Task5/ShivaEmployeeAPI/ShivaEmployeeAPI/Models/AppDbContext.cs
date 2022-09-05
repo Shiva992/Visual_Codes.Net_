@@ -25,6 +25,7 @@ namespace ShivaStudents.Models
                 Name = "Shiva",
                 Email = "Shiva@gmail.com",
                 Salary = 41000,
+                City= "Chandausi"
               
                 
 
@@ -35,6 +36,7 @@ namespace ShivaStudents.Models
                 Name = "Krishna",
                 Email = "Krishna@gmail.com",
                 Salary = 78000,
+                City="Moradabad"
                 
                 
 
@@ -45,7 +47,8 @@ namespace ShivaStudents.Models
                 Name = "Anand",
                 Email = "Anand@gmail.com",
                 Salary = 98000,
-                
+                City = "Mumbai"
+
 
 
             });
@@ -55,7 +58,8 @@ namespace ShivaStudents.Models
                 Name = "Anita",
                 Email = "Anita@gmail.com",
                 Salary = 89000,
-               
+                City = "Pune"
+
             });
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
@@ -63,7 +67,8 @@ namespace ShivaStudents.Models
                 Name = "Shraddha",
                 Email = "Sharaddh@gmail.com",
                 Salary = 59000,
-               
+                City = "Delhi"
+
 
 
             });
@@ -73,7 +78,8 @@ namespace ShivaStudents.Models
                 Name = "Amisha",
                 Email = "Amisha@gmail.com",
                 Salary = 70000,
-                
+                City = "Goa"
+
 
 
             });
@@ -83,7 +89,8 @@ namespace ShivaStudents.Models
                 Name = "Saurabh",
                 Email = "saurabh@gmail.com",
                 Salary = 48000,
-              
+                City = "Gurgaon"
+
 
 
             });
@@ -93,7 +100,8 @@ namespace ShivaStudents.Models
                 Name = "Tilak",
                 Email = "Tila@gmail.com",
                 Salary = 47900,
-              
+                City = "Noida"
+
 
             });
             modelBuilder.Entity<Employee>().HasData(new Employee
@@ -102,7 +110,8 @@ namespace ShivaStudents.Models
                 Name = "Paru",
                 Email = "Paru@gmail.com",
                 Salary = 41007,
-             
+                City = "Delhi"
+
 
             });
 

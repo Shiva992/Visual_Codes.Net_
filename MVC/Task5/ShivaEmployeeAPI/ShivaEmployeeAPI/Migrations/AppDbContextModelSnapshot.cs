@@ -29,6 +29,10 @@ namespace ShivaEmployeeAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"), 1L, 1);
 
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -48,6 +52,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 1,
+                            City = "Chandausi",
                             Email = "Shiva@gmail.com",
                             Name = "Shiva",
                             Salary = 41000
@@ -55,6 +60,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 2,
+                            City = "Moradabad",
                             Email = "Krishna@gmail.com",
                             Name = "Krishna",
                             Salary = 78000
@@ -62,6 +68,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 3,
+                            City = "Mumbai",
                             Email = "Anand@gmail.com",
                             Name = "Anand",
                             Salary = 98000
@@ -69,6 +76,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 4,
+                            City = "Pune",
                             Email = "Anita@gmail.com",
                             Name = "Anita",
                             Salary = 89000
@@ -76,6 +84,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 5,
+                            City = "Delhi",
                             Email = "Sharaddh@gmail.com",
                             Name = "Shraddha",
                             Salary = 59000
@@ -83,6 +92,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 6,
+                            City = "Goa",
                             Email = "Amisha@gmail.com",
                             Name = "Amisha",
                             Salary = 70000
@@ -90,6 +100,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 7,
+                            City = "Gurgaon",
                             Email = "saurabh@gmail.com",
                             Name = "Saurabh",
                             Salary = 48000
@@ -97,6 +108,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 8,
+                            City = "Noida",
                             Email = "Tila@gmail.com",
                             Name = "Tilak",
                             Salary = 47900
@@ -104,6 +116,7 @@ namespace ShivaEmployeeAPI.Migrations
                         new
                         {
                             EmployeeId = 9,
+                            City = "Delhi",
                             Email = "Paru@gmail.com",
                             Name = "Paru",
                             Salary = 41007
