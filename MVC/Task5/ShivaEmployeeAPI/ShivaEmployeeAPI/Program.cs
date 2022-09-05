@@ -8,6 +8,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(connString);
 
+
 });
 // Add services to the container.
 
