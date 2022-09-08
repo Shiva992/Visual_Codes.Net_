@@ -8,15 +8,16 @@ namespace ShivaEmployee.Controllers
     public class EmployeeController: Controller
     {
         [Authorize]
-        public async Task<ViewResult> List()
+        public async Task<ViewResult> List() //sysc - stepwise | async - randomly multi
         {
-            IEnumerable<Employee> employees = new List<Employee>();
+            IEnumerable<Employee> employees = new List<Employee>(); // database | IEnumerable 
 
-            using (var httpClient = new HttpClient())
+            using (var httpClient = new HttpClient())// request / connection
             {
-                using (var response = await httpClient.GetAsync("https://localhost:7218/api/Employee/List"))
+                using (var response = await httpClient.GetAsync("https://localhost:7218/api/Employee/List"))//Get postman
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    string apiResponse = await response.Content.ReadAsStringAsync();//APIResponse -> reading 
+                    //await - continue second task
                     employees = JsonConvert.DeserializeObject<IEnumerable<Employee>>(apiResponse);
                 }
             }
